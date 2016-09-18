@@ -1,4 +1,4 @@
-# prayer-app-api
+# hana api
 This is the server side code for the prayer app. 
 
 
@@ -8,32 +8,14 @@ This is the server side code for the prayer app.
 
 
 ## setup
-In the config folder, add file parameters.json with the following format:
+The following environment variables are needed for the api to work:
 
 ```
-{
-  "server": {
-    "host": "127.0.0.1",
-    "port": 3000
-  },
-  "database": {
-    "host": "127.0.0.1",
-    "port": 27017,
-    "db": "YourDataBaseName",
-    "username": "YourDataBaseUserName",
-    "password": "YourDatabasePassword"
-  },
-  "key": {
-    "privateKey": "YourPrivateKey",
-    "tokenExpiration": 3600000,
-    "tokenExpirationDescription": "1 hour"
-  },
-  "mail": {
-    "email": "senderMail@website.com",
-    "userName": "YourMailAccount",
-    "password": "YourMailPassword"
-  }
-}
+DB_CONNECTION
+JWT_PRIVATE_KEY
+MAIL_EMAIL
+MAIL_USERNAME
+MAIL_PASSWORD
 ```
 
 
